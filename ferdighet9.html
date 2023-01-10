@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Trykk på navnet ditt!</h1>
+        <!--button onclick="alert('Hei ' + this.innerHTML + ' !')">Per</button>
+        <button onclick="alert('Hei ' + this.innerHTML + ' !')">Pål</button>
+        <button onclick="alert('Hei ' + this.innerHTML + ' !')">Espen</button-->
+
+        <button onclick="trykk(this)">Per</button>
+        <button onclick="trykk(this)">Pål</button>
+        <button onclick="trykk(this)">Espen</button>
+
+        
+        <script>
+            function trykk(a) {
+                alert('Hei ' + a.innerHTML + ' !');
+            }
+
+            //var tekst = 'Hei ' + navn + '. Hvordan står det til i ' + sted + '?';
+            var tekst = `Hei, ${navn}. Hvordan står det til i ${sted}?`;
+        </script>
+
+        
+
+
+    </body>
+</html>
